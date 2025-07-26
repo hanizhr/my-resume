@@ -1,76 +1,107 @@
-.head{
-    background: #99d2f7;
-    background: radial-gradient(circle,rgba(153, 210, 247, 1) 0%, rgba(55, 123, 191, 1) 100%);
-}
-.test_h{
-    color: whitesmoke;
-}
-
-.about-me {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #fdfdfd;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+/* پس‌زمینه با گرادیانت ملایم و زیبا */
+.head {
+  background: radial-gradient(circle at top left, #99d2f7 0%, #375bbf 100%);
+  padding: 60px 20px;
+  color: whitesmoke;
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.8;
-  font-size: 1.05rem;
-  transition: transform 0.3s ease;
 }
 
-.about-me:hover {
-  transform: translateY(-5px);
+/* متن */
+.test_h {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
 }
 
-.about-me h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+/* کارت‌های بخش about-me, skills, experience, contact */
+.about-me,
+.skills-section,
+.experience-section,
+.contact-section {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px 35px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow:
+    0 4px 15px rgba(49, 89, 236, 0.15),
+    0 8px 30px rgba(55, 123, 191, 0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.9;
+  font-size: 1.1rem;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1.5px solid transparent;
+}
+
+.about-me:hover,
+.skills-section:hover,
+.experience-section:hover,
+.contact-section:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 12px 40px rgba(49, 89, 236, 0.3),
+    0 18px 55px rgba(55, 123, 191, 0.25);
+  border-color: #3159ec;
+}
+
+/* عناوین بخش‌ها */
+.about-me h2,
+.skills-title,
+.experience-title,
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 28px;
   color: #2c3e50;
-  border-left: 5px solid #3159ec;
-  padding-left: 15px;
+  border-left: 6px solid #3159ec;
+  padding-left: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  user-select: none;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
 }
 
+/* پاراگراف */
 .about-me p {
-  margin-bottom: 15px;
-}
-.skills-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #fdfdfd;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.8;
+  margin-bottom: 18px;
   font-size: 1.05rem;
-  transition: transform 0.3s ease;
+  color: #444;
 }
 
-.skills-section:hover {
-  transform: translateY(-5px);
-}
-
-.skills-title {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #2c3e50;
-  border-left: 5px solid #3159ec;
-  padding-left: 15px;
-}
-
+/* Skills بخش با گرید پیشرفته */
 .skills-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 28px;
+  padding-top: 15px;
+}
+
+.skill-category {
+  background: linear-gradient(135deg, #e3eefe 0%, #c4d7fc 100%);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 18px rgba(49, 89, 236, 0.15);
+  transition: background 0.3s ease;
+  cursor: default;
+}
+
+.skill-category:hover {
+  background: linear-gradient(135deg, #d0ddf9 0%, #a9c1f8 100%);
+  box-shadow: 0 8px 28px rgba(49, 89, 236, 0.3);
 }
 
 .skill-category h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #3159ec;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #2a48a8;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  user-select: none;
 }
 
 .skill-category ul {
@@ -80,155 +111,132 @@
 }
 
 .skill-category li {
-  background: #f2f4ff;
-  margin: 6px 0;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  transition: background 0.2s ease;
+  background: #f7faff;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+  box-shadow: inset 0 1px 3px rgba(255,255,255,0.8);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .skill-category li:hover {
-  background: #dfe7ff;
+  background: #3159ec;
+  color: white;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.3);
 }
 
-.experience-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #fdfdfd;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  line-height: 1.8;
-  font-size: 1.05rem;
-  transition: transform 0.3s ease;
-}
-
-.experience-section:hover {
-  transform: translateY(-5px);
-}
-
-.experience-title {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #2c3e50;
-  border-left: 5px solid #3159ec;
-  padding-left: 15px;
-}
-
+/* سابقه کاری */
 .experience-item {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  border-left: 4px solid #3159ec;
+  padding-left: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.experience-item:hover {
+  border-color: #5578f2;
 }
 
 .experience-item h3 {
-  font-size: 1.2rem;
-  color: #3159ec;
-  margin: 0;
+  font-size: 1.4rem;
+  color: #2a3a87;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 .experience-date {
   display: block;
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 5px;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 8px;
+  font-style: italic;
 }
 
-.experience-item p {
-  margin: 0;
-}
-
-.contact-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 30px;
-  background: #fdfdfd;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  font-size: 1.05rem;
-  transition: transform 0.3s ease;
-}
-
-.contact-section:hover {
-  transform: translateY(-5px);
-}
-
-.contact-title {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #2c3e50;
-  border-left: 5px solid #3159ec;
-  padding-left: 15px;
-}
-
+/* بخش ارتباط با من */
 .contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-list li {
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .contact-list a {
   text-decoration: none;
   color: #3159ec;
-  font-weight: 500;
-  display: inline-flex;
+  font-weight: 600;
+  display: flex;
   align-items: center;
-  transition: color 0.3s;
+  gap: 12px;
+  padding: 10px 18px;
+  background: #e7edff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(49, 89, 236, 0.15);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-list a:hover {
-  color: #1d3dd6;
+  background: #3159ec;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(49, 89, 236, 0.4);
 }
 
 .contact-list i {
-  margin-right: 10px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
-@media (max-width: 600px) {
+
+/* ریسپانسیو پیشرفته */
+@media (max-width: 900px) {
   .about-me,
   .skills-section,
   .experience-section,
   .contact-section {
-    padding: 20px;
-    margin: 20px 15px;
-    font-size: 0.95rem;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 30px 25px;
+    font-size: 1rem;
   }
 
   .about-me h2,
   .skills-title,
   .experience-title,
   .contact-title {
-    font-size: 1.4rem;
-    padding-left: 10px;
+    font-size: 1.6rem;
+    padding-left: 12px;
   }
 
-  .skill-category h3,
+  .skill-category h3 {
+    font-size: 1.1rem;
+  }
+
   .experience-item h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-list {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
   }
 
-  .skill-category li {
-    font-size: 0.85rem;
-    padding: 6px 10px;
-  }
-
-  .experience-date {
-    font-size: 0.8rem;
-  }
-
-  .contact-list i {
-    font-size: 1rem;
-    margin-right: 8px;
+  .contact-list {
+    flex-direction: column;
+    gap: 18px;
   }
 
   .contact-list a {
-    font-size: 0.95rem;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 }
