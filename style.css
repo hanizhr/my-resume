@@ -191,3 +191,44 @@
   margin-right: 10px;
   font-size: 1.2rem;
 }
+@media (max-width: 600px) {
+  .about-me,
+  .skills-section,
+  .experience-section,
+  .contact-section {
+    padding: 20px;
+    margin: 20px 15px;
+    font-size: 0.95rem;
+  }
+
+  .about-me h2,
+  .skills-title,
+  .experience-title,
+  .contact-title {
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+
+  .skill-category h3,
+  .experience-item h3 {
+    font-size: 1rem;
+  }
+
+  .skill-category li {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .experience-date {
+    font-size: 0.8rem;
+  }
+
+  .contact-list i {
+    font-size: 1rem;
+    margin-right: 8px;
+  }
+
+  .contact-list a {
+    font-size: 0.95rem;
+  }
+}
