@@ -1,4 +1,8 @@
-/* پس‌زمینه با گرادیانت ملایم و زیبا */
+
+
+body{
+  font-family: "Josefin Sans", sans-serif;
+}
 .head {
   background: radial-gradient(circle at top left, #99d2f7 0%, #375bbf 100%);
   padding: 60px 20px;
@@ -7,7 +11,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* متن */
 .test_h {
   color: whitesmoke;
   font-weight: 700;
@@ -17,7 +20,6 @@
   margin-bottom: 1rem;
 }
 
-/* کارت‌های بخش about-me, skills, experience, contact */
 .about-me,
 .skills-section,
 .experience-section,
@@ -49,7 +51,6 @@
   border-color: #3159ec;
 }
 
-/* عناوین بخش‌ها */
 .about-me h2,
 .skills-title,
 .experience-title,
@@ -66,14 +67,12 @@
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
 }
 
-/* پاراگراف */
 .about-me p {
   margin-bottom: 18px;
   font-size: 1.05rem;
   color: #444;
 }
 
-/* Skills بخش با گرید پیشرفته */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -128,7 +127,6 @@
   box-shadow: inset 0 1px 5px rgba(0,0,0,0.3);
 }
 
-/* سابقه کاری */
 .experience-item {
   margin-bottom: 30px;
   border-left: 4px solid #3159ec;
@@ -155,7 +153,6 @@
   font-style: italic;
 }
 
-/* بخش ارتباط با من */
 .contact-list {
   list-style: none;
   padding: 0;
@@ -194,7 +191,6 @@
   font-size: 1.4rem;
 }
 
-/* ریسپانسیو پیشرفته */
 @media (max-width: 900px) {
   .about-me,
   .skills-section,
