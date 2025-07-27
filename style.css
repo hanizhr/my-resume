@@ -23,7 +23,7 @@ body{
 .about-me,
 .skills-section,
 .experience-section,
-.contact-section {
+.contact-section, .col {
   max-width: 700px;
   margin: 50px auto;
   padding: 40px 35px;
@@ -43,7 +43,7 @@ body{
 .about-me:hover,
 .skills-section:hover,
 .experience-section:hover,
-.contact-section:hover {
+.contact-section:hover , .col:hover{
   transform: translateY(-8px);
   box-shadow:
     0 12px 40px rgba(49, 89, 236, 0.3),
@@ -191,6 +191,25 @@ body{
   font-size: 1.4rem;
 }
 
+.custom-card-btn {
+  text-decoration: none;
+  color: #3159ec;
+  font-weight: 600;
+  padding: 8px 14px;
+  background: #e7edff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(49, 89, 236, 0.12);
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.custom-card-btn:hover {
+  background: #3159ec;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(49, 89, 236, 0.3);
+}
+
+
 @media (max-width: 900px) {
   .about-me,
   .skills-section,
@@ -236,3 +255,6 @@ body{
     padding: 12px 20px;
   }
 }
+
+
+
