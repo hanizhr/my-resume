@@ -32,7 +32,6 @@ The design is lightweight, responsive, and built with pure HTML/CSS, focusing on
 
 <img width="1377" height="916" alt="image" src="https://github.com/user-attachments/assets/f2fb6161-8274-4277-8892-53f6407f095d" />
 
-> *(Replace this with your own screenshot if available)*
 
 ---
 
