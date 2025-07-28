@@ -15,7 +15,7 @@ This is my personal portfolio/resume site hosted on GitHub Pages. It highlights 
 - Projects and personal achievements
 - Contact information
 
-The design is lightweight, responsive, and built with pure HTML/CSS (no frameworks), focusing on readability and simplicity.
+The design is lightweight, responsive, and built with pure HTML/CSS, focusing on readability and simplicity.
 
 ---
 
@@ -23,14 +23,15 @@ The design is lightweight, responsive, and built with pure HTML/CSS (no framewor
 
 - HTML5
 - CSS3
-- JavaScript (optional – depending on what you add)
+- JavaScript
 - GitHub Pages for deployment
 
 ---
 
 ## 📷 Preview
 
-![Site Screenshot](https://raw.githubusercontent.com/hanizhr/my-resume/main/screenshot.png)  
+<img width="1377" height="916" alt="image" src="https://github.com/user-attachments/assets/f2fb6161-8274-4277-8892-53f6407f095d" />
+
 > *(Replace this with your own screenshot if available)*
 
 ---
