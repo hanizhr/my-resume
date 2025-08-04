@@ -260,7 +260,6 @@ body{
 
 
  */
-
 /* General Reset */
 * {
     box-sizing: border-box;
@@ -270,146 +269,107 @@ body{
 
 /* Body Styling */
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: #f8f9fa; /* Light background */
-    color: #333; /* Dark text color */
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
 /* Header Section */
 .head {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* White text */
-    padding: 60px 0; /* Padding for top and bottom */
+    background: radial-gradient(circle at top left, #99d2f7 0%, #375bbf 100%);
+    padding: 80px 20px; /* Increased padding for a more spacious look */
+    color: whitesmoke;
+    text-align: center;
 }
 
-.head h1 {
-    font-size: 3rem; /* Large font size for the name */
+.test_h {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.5rem; /* Slightly larger font size */
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    margin-bottom: 1.5rem; /* Increased margin for spacing */
 }
 
-.head p {
-    font-size: 1.25rem; /* Medium font size for the description */
+/* Section Styling */
+.about-me,
+.skills-section,
+.experience-section,
+.contact-section,
+.col {
+    max-width: 800px; /* Increased max-width for better readability */
+    margin: 60px auto; /* Increased margin for spacing */
+    padding: 50px 40px; /* Increased padding for a more spacious feel */
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(49, 89, 236, 0.15), 0 8px 30px rgba(55, 123, 191, 0.12);
+    color: #222;
+    line-height: 1.8; /* Adjusted line height for readability */
+    font-size: 1.1rem;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border: 1.5px solid transparent;
 }
 
-/* Button Styling */
-.btn {
-    border-radius: 20px; /* Rounded buttons */
+.about-me:hover,
+.skills-section:hover,
+.experience-section:hover,
+.contact-section:hover,
+.col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(49, 89, 236, 0.3), 0 18px 55px rgba(55, 123, 191, 0.25);
+    border-color: #3159ec;
 }
 
-.btn-primary {
-    background-color: #0056b3; /* Darker blue for primary button */
-}
-
-.btn-outline-secondary {
-    border-color: #6c757d; /* Border color for secondary button */
-}
-
-/* About Me Section */
-.about-me {
-    padding: 40px 0; /* Padding for the section */
-    text-align: center; /* Center align text */
-}
-
-.about-me h2 {
-    font-size: 2.5rem; /* Large font size for section title */
-    margin-bottom: 20px; /* Space below the title */
-}
-
-/* Skills Section */
-.skills-section {
-    padding: 40px 0; /* Padding for the section */
-}
-
-.skills-title {
-    font-size: 2.5rem; /* Large font size for skills title */
-    text-align: center; /* Center align title */
-    margin-bottom: 30px; /* Space below the title */
-}
-
-.skill-category {
-    margin-bottom: 20px; /* Space between skill categories */
-}
-
-.skill-category h3 {
-    font-size: 1.5rem; /* Medium font size for skill category */
-    margin-bottom: 10px; /* Space below the category title */
-}
-
-/* Experience Section */
-.experience-section {
-    padding: 40px 0; /* Padding for the section */
-}
-
-.experience-title {
-    font-size: 2.5rem; /* Large font size for experience title */
-    text-align: center; /* Center align title */
-    margin-bottom: 30px; /* Space below the title */
-}
-
-.experience-item {
-    margin-bottom: 20px; /* Space between experience items */
-}
-
-.experience-date {
-    font-weight: bold; /* Bold for the date */
-    color: #6c757d; /* Gray color for the date */
-}
-
-/* Card Styling */
-.card {
-    border-radius: 18px; /* Rounded corners for cards */
-    overflow: hidden; /* Hide overflow */
-}
-
-.card img {
-    height: 140px; /* Fixed height for images */
-    object-fit: cover; /* Cover the area */
-}
-
-.card-body {
-    padding: 14px; /* Padding inside card body */
-}
-
-.custom-card-btn {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Bootstrap primary color */
-}
-
-/* Contact Section */
-.contact-section {
-    padding: 40px 0; /* Padding for the section */
-    text-align: center; /* Center align text */
-}
-
+/* Section Titles */
+.about-me h2,
+.skills-title,
+.experience-title,
 .contact-title {
-    font-size: 2.5rem; /* Large font size for contact title */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 2.2rem; /* Slightly larger font size */
+    margin-bottom: 30px; /* Increased margin for spacing */
+    color: #2c3e50;
+    border-left: 6px solid #3159ec;
+    padding-left: 20px; /* Increased padding for emphasis */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    user-select: none;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
 }
 
-.contact-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+/* Paragraph Styling */
+.about-me p {
+    margin-bottom: 20px; /* Increased margin for spacing */
+    font-size: 1.1rem; /* Consistent font size */
+    color: #444;
 }
 
-.contact-list li {
-    margin: 10px 0; /* Space between list items */
+/* Skills List */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px; /* Increased gap for better spacing */
+    padding-top: 20px; /* Increased padding for spacing */
 }
 
-.contact-list a {
-    text-decoration: none; /* Remove underline */
-    color: #007bff; /* Bootstrap primary color */
+/* Skill Category */
+.skill-category {
+    background: linear-gradient(135deg, #e3eefe 0%, #c4d7fc 100%);
+    border-radius: 16px;
+    padding: 20px; /* Increased padding for a more spacious feel */
+    box-shadow: 0 4px 20px rgba(49, 89, 236, 0.15);
+    transition: background 0.3s ease;
+    cursor: pointer; /* Changed cursor to pointer */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .head h1 {
-        font-size: 2.5rem; /* Smaller font size for mobile */
-    }
-
-    .head p {
-        font-size: 1rem; /* Smaller font size for mobile */
-    }
-
-    .skills-title, .experience-title, .contact-title {
-        font-size: 2rem; /* Smaller font size for mobile */
-    }
+.skill-category:hover {
+    background: linear-gradient(135deg, #d0ddf9 0%, #a9c1f8 100%);
+    box-shadow: 0 8px 28px rgba(49, 89, 236, 0.3);
 }
+
+/* Skill Category Title */
+.skill-category h3 {
+    font-size: 1.4rem; /* Increased font size */
+    margin-bottom: 15px;
+    color: #2a48a8;
+    font-weight: 700;
+    letter-spacing
