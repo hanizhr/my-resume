@@ -1,4 +1,4 @@
-
+/* 
 body{
   font-family: "Josefin Sans", sans-serif;
 }
@@ -256,3 +256,224 @@ body{
 }
 
 
+
+ */
+/* Professional Portfolio Redesign */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  line-height: 1.8;
+}
+
+/* Header */
+.head {
+  background: linear-gradient(120deg, #3a58e3, #5fb6f7);
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.test_h {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Section Cards */
+.about-me,
+.skills-section,
+.experience-section,
+.contact-section,
+.col {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  border-left: 6px solid #3a58e3;
+}
+
+.about-me:hover,
+.skills-section:hover,
+.experience-section:hover,
+.contact-section:hover,
+.col:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(58, 88, 227, 0.2);
+}
+
+/* Section Headings */
+.about-me h2,
+.skills-title,
+.experience-title,
+.contact-title {
+  font-size: 1.8rem;
+  color: #2d3a59;
+  margin-bottom: 25px;
+  padding-left: 12px;
+  border-left: 4px solid #5fb6f7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Paragraphs */
+.about-me p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Skills Grid */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.skill-category {
+  background: #f0f4ff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: inset 0 0 0 1px #dde6f8;
+  transition: 0.25s ease;
+}
+
+.skill-category:hover {
+  background: #e1ebfd;
+  box-shadow: inset 0 0 0 2px #3a58e3;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  color: #3a58e3;
+  margin-bottom: 12px;
+}
+
+/* Skill Items */
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category li {
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #34495e;
+  transition: 0.2s;
+}
+
+.skill-category li:hover {
+  background-color: #3a58e3;
+  color: #fff;
+}
+
+/* Experience */
+.experience-item {
+  padding-left: 16px;
+  border-left: 4px solid #5fb6f7;
+  margin-bottom: 24px;
+}
+
+.experience-item h3 {
+  font-size: 1.3rem;
+  color: #2d3a59;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.experience-date {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-list li {
+  list-style: none;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #3a58e3;
+  padding: 10px 18px;
+  background: #eaf1ff;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list a:hover {
+  background: #3a58e3;
+  color: white;
+}
+
+/* Buttons */
+.custom-card-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #eaf1ff;
+  color: #3a58e3;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.custom-card-btn:hover {
+  background: #3a58e3;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-me,
+  .skills-section,
+  .experience-section,
+  .contact-section {
+    padding: 28px;
+    margin: 40px 20px;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .test_h {
+    font-size: 2rem;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
